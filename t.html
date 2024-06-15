@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn:hover{
+            background-color:cadetblue;
+        color:rgb(246, 241, 241);
+        border-radius: 10px;
+        border:dotted;
+        }
+        ul li:nth-child(2n):hover{
+            background-color:rgb(140,142,142);
+            color:rgb(232,232,237);
+            font-style:italic;
+        }
+        p::first-line{
+            font-size: larger;
+            font-style: oblique;
+            color:rgb(227, 34, 34);
+        }
+        p{
+            text-align: justify;
+        }
+        label::after{
+            content:"*";
+            color:red;
+        }
+
+        p::before{
+            content:"IMP*";
+            color:blue;
+        }
+        .card{
+            height: 200px;
+            width: 200px;
+            background-color: burlywood;
+            transition: backgound-color border-radius;
+            transition-duration: 5s;
+            transition-delay:2ms;
+        }
+        .card:hover{
+            background-color: blueviolet;
+            border-radius: 50%;
+        }
+        .card1{
+            height:200px;
+            width:200px;
+            background-color:black;
+            animation:colorchange 2s infinite;
+
+        }
+        @keyframes colorchange{
+            0%{
+                background-color: black;
+                border-radius: 50%;
+                box-shadow: 10px 20px 5px gray;
+            }
+            25%{
+                background-color:rgb(129,29,29);
+            }
+            50%{
+                background-color: rgb(6,15,234);
+            }
+            75%{
+                background-color: rgb(19,234,15);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <button class="btn">Submit</button>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+    </ul>
+    
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id saepe ad deserunt, voluptates at voluptatibus ipsam debitis tenetur suscipit beatae dolorum numquam aliquid fugiat quis quo? Sed consequuntur necessitatibus molestiae!</p>
+
+<form action="">
+    <label for="">Name</label><br>
+    <input type="text" name="" id=""><br>
+    <label for="">Last Name</label><br>
+    <input type="text" name="" id=""><br>
+    <label for="">Email</label><br>
+   <input type="text" name="" id=""><br>
+<div class="card">
+
+</div>
+<br><br><br>
+
+<div class="card1"></div>
+</form>
+</body>
+  
+</body>
+</html>
